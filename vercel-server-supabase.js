@@ -243,8 +243,12 @@ app.get('/api/processos', authenticateToken, async (req, res) => {
 app.get('/api/alerts', authenticateToken, async (req, res) => {
   try {
     console.log('🔔 Buscando alertas para usuário:', req.user.id);
+    console.log('🔍 Cliente Supabase:', supabaseAdmin ? 'Admin' : 'Normal');
     
     const client = supabaseAdmin || supabase;
+    
+    // Tentar buscar na tabela 'alertas' primeiro
+    console.log('📡 Tentando buscar na tabela "alertas"...');
     const { data: alertas, error } = await client
       .from('alertas')
       .select('*')
@@ -253,11 +257,28 @@ app.get('/api/alerts', authenticateToken, async (req, res) => {
 
     if (error) {
       console.error('❌ Erro ao buscar alertas:', error);
-      // Se a tabela não existir, retornar array vazio
-      if (error.code === 'PGRST106' || error.message.includes('relation "alertas" does not exist')) {
-        console.log('📝 Tabela alertas não existe, retornando array vazio');
-        return res.json({ alertas: [] });
+      console.error('❌ Código do erro:', error.code);
+      console.error('❌ Mensagem do erro:', error.message);
+      
+      // Se a tabela não existir, tentar 'alerts'
+      if (error.code === 'PGRST205' || error.message.includes('Could not find the table')) {
+        console.log('📝 Tabela "alertas" não encontrada, tentando "alerts"...');
+        
+        const { data: alertas2, error: error2 } = await client
+          .from('alerts')
+          .select('*')
+          .eq('user_id', req.user.id)
+          .limit(10);
+          
+        if (error2) {
+          console.error('❌ Erro ao buscar em "alerts":', error2);
+          return res.json({ alertas: [] });
+        }
+        
+        console.log('✅ Alertas encontrados em "alerts":', alertas2?.length || 0);
+        return res.json({ alertas: alertas2 || [] });
       }
+      
       return res.status(500).json({ error: 'Erro interno do servidor' });
     }
 
