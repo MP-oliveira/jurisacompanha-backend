@@ -245,7 +245,7 @@ app.get('/api/alerts', authenticateToken, async (req, res) => {
     console.log('🔔 Buscando alertas para usuário:', req.user.id);
     console.log('🔍 Cliente Supabase:', supabaseAdmin ? 'Admin' : 'Normal');
     
-    const client = supabaseAdmin || supabase;
+    const client = supabase; // Usar apenas supabase normal para evitar problemas de permissão
     
     // Tentar buscar na tabela 'alertas' primeiro
     console.log('📡 Tentando buscar na tabela "alertas"...');
