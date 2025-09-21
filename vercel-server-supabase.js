@@ -51,9 +51,13 @@ app.get('/api/health', (req, res) => {
 // Login de usuário
 app.post('/api/auth/login', async (req, res) => {
   try {
+    console.log('🔐 Login attempt:', { email: req.body.email, hasPassword: !!req.body.password });
+    console.log('🌐 Request headers:', req.headers);
+    
     const { email, password } = req.body;
 
     if (!email || !password) {
+      console.log('❌ Missing email or password');
       return res.status(400).json({
         error: 'Email e senha são obrigatórios'
       });
@@ -75,16 +79,21 @@ app.post('/api/auth/login', async (req, res) => {
     }
 
     if (!users || users.length === 0) {
+      console.log('❌ User not found for email:', email);
       return res.status(401).json({
         error: 'Email ou senha inválidos'
       });
     }
 
     const user = users[0];
+    console.log('✅ User found:', { id: user.id, email: user.email, ativo: user.ativo });
 
     // Verifica a senha
     const isValidPassword = await bcrypt.compare(password, user.password);
+    console.log('🔑 Password valid:', isValidPassword);
+    
     if (!isValidPassword) {
+      console.log('❌ Invalid password for user:', email);
       return res.status(401).json({
         error: 'Email ou senha inválidos'
       });
