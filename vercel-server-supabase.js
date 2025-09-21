@@ -226,7 +226,7 @@ app.get('/api/processos', authenticateToken, async (req, res) => {
 app.get('/api/alerts', authenticateToken, async (req, res) => {
   try {
     const { data: alertas, error } = await supabase
-      .from('alerts')
+      .from('alertas')
       .select('*')
       .eq('user_id', req.user.id)
       .limit(10);
