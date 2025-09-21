@@ -25,6 +25,7 @@ app.use(cors({
     'https://jurisacompanha.vercel.app',
     'https://jurisacompanha-frontend.vercel.app',
     'https://jurisacompanha-frontend-chim9pjw3.vercel.app',
+    'https://jurisacompanha-frontend-nnrcu8uvk.vercel.app',
     'https://frontend-glx5w9c74-mauricio-silva-oliveiras-projects.vercel.app',
     'https://acompanhamento-processual-kbqpox4iz.vercel.app',
     'http://localhost:5173',
@@ -32,7 +33,9 @@ app.use(cors({
     'http://127.0.0.1:5173',
     'http://127.0.0.1:3000'
   ],
-  credentials: true
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
 app.use(express.json({ limit: '10mb' }));
 
