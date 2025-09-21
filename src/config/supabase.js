@@ -7,11 +7,7 @@ dotenv.config();
 
 // Debug somente em desenvolvimento para não vazar variáveis em produção
 if (process.env.NODE_ENV !== 'production') {
-  console.log('🔍 Debug das variáveis de ambiente:');
-  console.log('SUPABASE_URL:', process.env.SUPABASE_URL);
-  console.log('SUPABASE_ANON_KEY:', process.env.SUPABASE_ANON_KEY ? 'DEFINIDA' : 'NÃO DEFINIDA');
-  console.log('SUPABASE_SERVICE_ROLE_KEY:', process.env.SUPABASE_SERVICE_ROLE_KEY ? 'DEFINIDA' : 'NÃO DEFINIDA');
-  console.log('Diretório atual:', process.cwd());
+  // Debug das variáveis de ambiente desabilitado para produção
 }
 
 // Verificar se as variáveis de ambiente estão definidas
@@ -49,7 +45,6 @@ if (process.env.SUPABASE_SERVICE_ROLE_KEY) {
       }
     }
   );
-  console.log('✅ Cliente admin do Supabase criado com sucesso!');
 } else {
   console.warn('⚠️ SUPABASE_SERVICE_ROLE_KEY não definida. Operações admin podem não funcionar.');
 }
@@ -67,7 +62,6 @@ const testConnection = async () => {
       return false;
     }
     
-    console.log('✅ Conexão com Supabase estabelecida com sucesso!');
     return true;
   } catch (err) {
     console.error('❌ Erro na conexão com Supabase:', err.message);

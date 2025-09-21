@@ -161,7 +161,7 @@ export const authSecurityHeaders = (req, res, next) => {
   res.setHeader('Expires', '0');
   
   // Previne cache de dados sensíveis (apenas em logout)
-  if (req.path.includes('/logout') || req.method === 'POST') {
+  if (req.path.includes('/logout')) {
     res.setHeader('Clear-Site-Data', '"cache", "cookies", "storage"');
   }
   
