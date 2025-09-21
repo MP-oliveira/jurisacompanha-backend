@@ -237,6 +237,8 @@ app.get('/api/processos', authenticateToken, async (req, res) => {
 // Mock de alertas para o dashboard
 app.get('/api/alerts', authenticateToken, async (req, res) => {
   try {
+    console.log('🔔 Buscando alertas para usuário:', req.user.id);
+    
     const { data: alertas, error } = await supabase
       .from('alertas')
       .select('*')
@@ -244,13 +246,19 @@ app.get('/api/alerts', authenticateToken, async (req, res) => {
       .limit(10);
 
     if (error) {
-      console.error('Erro ao buscar alertas:', error);
+      console.error('❌ Erro ao buscar alertas:', error);
+      // Se a tabela não existir, retornar array vazio em vez de erro 500
+      if (error.code === 'PGRST106' || error.message.includes('relation "alertas" does not exist')) {
+        console.log('📝 Tabela alertas não existe, retornando array vazio');
+        return res.json({ alertas: [] });
+      }
       return res.status(500).json({ error: 'Erro interno do servidor' });
     }
 
+    console.log('✅ Alertas encontrados:', alertas?.length || 0);
     res.json({ alertas: alertas || [] });
   } catch (error) {
-    console.error('Erro ao buscar alertas:', error);
+    console.error('❌ Erro ao buscar alertas:', error);
     res.status(500).json({ error: 'Erro interno do servidor' });
   }
 });
@@ -258,6 +266,8 @@ app.get('/api/alerts', authenticateToken, async (req, res) => {
 // Rota para listar relatórios
 app.get('/api/relatorios', authenticateToken, async (req, res) => {
   try {
+    console.log('📊 Buscando relatórios para usuário:', req.user.id);
+    
     const { data: relatorios, error } = await supabase
       .from('relatorios')
       .select('*')
@@ -265,13 +275,19 @@ app.get('/api/relatorios', authenticateToken, async (req, res) => {
       .limit(50);
 
     if (error) {
-      console.error('Erro ao buscar relatórios:', error);
+      console.error('❌ Erro ao buscar relatórios:', error);
+      // Se a tabela não existir, retornar array vazio em vez de erro 500
+      if (error.code === 'PGRST106' || error.message.includes('relation "relatorios" does not exist')) {
+        console.log('📝 Tabela relatorios não existe, retornando array vazio');
+        return res.json({ relatorios: [] });
+      }
       return res.status(500).json({ error: 'Erro interno do servidor' });
     }
 
+    console.log('✅ Relatórios encontrados:', relatorios?.length || 0);
     res.json({ relatorios: relatorios || [] });
   } catch (error) {
-    console.error('Erro ao buscar relatórios:', error);
+    console.error('❌ Erro ao buscar relatórios:', error);
     res.status(500).json({ error: 'Erro interno do servidor' });
   }
 });
@@ -279,24 +295,39 @@ app.get('/api/relatorios', authenticateToken, async (req, res) => {
 // Mock de relatórios stats
 app.get('/api/relatorios/stats', authenticateToken, async (req, res) => {
   try {
+    console.log('📊 Buscando stats de relatórios para usuário:', req.user.id);
+    
     const { count, error } = await supabase
       .from('relatorios')
       .select('*', { count: 'exact', head: true })
       .eq('user_id', req.user.id);
 
     if (error) {
-      console.error('Erro ao buscar stats de relatórios:', error);
+      console.error('❌ Erro ao buscar stats de relatórios:', error);
+      // Se a tabela não existir, retornar stats zerados em vez de erro 500
+      if (error.code === 'PGRST106' || error.message.includes('relation "relatorios" does not exist')) {
+        console.log('📝 Tabela relatorios não existe, retornando stats zerados');
+        return res.json({
+          total: 0,
+          concluidos: 0,
+          pendentes: 0,
+          estaSemana: 0
+        });
+      }
       return res.status(500).json({ error: 'Erro interno do servidor' });
     }
 
-    res.json({
+    const stats = {
       total: count || 0,
       concluidos: Math.floor((count || 0) * 0.7),
       pendentes: Math.floor((count || 0) * 0.3),
       estaSemana: Math.floor((count || 0) * 0.1)
-    });
+    };
+    
+    console.log('✅ Stats de relatórios:', stats);
+    res.json(stats);
   } catch (error) {
-    console.error('Erro ao buscar stats de relatórios:', error);
+    console.error('❌ Erro ao buscar stats de relatórios:', error);
     res.status(500).json({ error: 'Erro interno do servidor' });
   }
 });
