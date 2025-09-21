@@ -22,7 +22,9 @@ console.log('🔑 Service Role Key configurada:', !!process.env.SUPABASE_SERVICE
 // Middlewares básicos
 app.use(cors({
   origin: [
-    'https://jurisacompanha.vercel.app', 
+    'https://jurisacompanha.vercel.app',
+    'https://jurisacompanha-frontend.vercel.app',
+    'https://jurisacompanha-frontend-chim9pjw3.vercel.app',
     'https://frontend-glx5w9c74-mauricio-silva-oliveiras-projects.vercel.app',
     'https://acompanhamento-processual-kbqpox4iz.vercel.app',
     'http://localhost:5173',
