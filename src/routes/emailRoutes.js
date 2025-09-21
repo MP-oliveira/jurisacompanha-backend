@@ -3,7 +3,7 @@
  */
 
 import express from 'express';
-import { authenticateToken } from '../middleware/auth.js';
+import { auth as authenticateToken } from '../middlewares/auth.js';
 import emailController from '../controllers/emailController.js';
 
 const router = express.Router();

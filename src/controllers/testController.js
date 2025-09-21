@@ -2,7 +2,7 @@
  * Controller para testes de email e criação de dados base
  */
 
-import { authenticateToken } from '../middleware/auth.js';
+import { auth as authenticateToken } from '../middlewares/auth.js';
 import { Processo, User } from '../models/index.js';
 import EmailSender from '../services/emailSender.js';
 import logger from '../config/logger.js';

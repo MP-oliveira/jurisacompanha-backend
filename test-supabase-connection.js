@@ -30,3 +30,4 @@ if (adminError) {
 } else {
   console.log('✅ SupabaseAdmin funcionando:', adminData);
 }
+
