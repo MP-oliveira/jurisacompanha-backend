@@ -243,6 +243,27 @@ app.get('/api/alerts', authenticateToken, async (req, res) => {
   }
 });
 
+// Rota para listar relatórios
+app.get('/api/relatorios', authenticateToken, async (req, res) => {
+  try {
+    const { data: relatorios, error } = await supabase
+      .from('relatorios')
+      .select('*')
+      .eq('user_id', req.user.id)
+      .limit(50);
+
+    if (error) {
+      console.error('Erro ao buscar relatórios:', error);
+      return res.status(500).json({ error: 'Erro interno do servidor' });
+    }
+
+    res.json({ relatorios: relatorios || [] });
+  } catch (error) {
+    console.error('Erro ao buscar relatórios:', error);
+    res.status(500).json({ error: 'Erro interno do servidor' });
+  }
+});
+
 // Mock de relatórios stats
 app.get('/api/relatorios/stats', authenticateToken, async (req, res) => {
   try {
