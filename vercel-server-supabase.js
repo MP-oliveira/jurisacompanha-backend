@@ -113,6 +113,53 @@ app.post('/api/auth/login', async (req, res) => {
   }
 });
 
+// Rota para criar usuário (registro)
+app.post('/api/auth/register', async (req, res) => {
+  try {
+    const { nome, email, password } = req.body;
+
+    if (!nome || !email || !password) {
+      return res.status(400).json({ error: 'Nome, email e senha são obrigatórios' });
+    }
+
+    const { data: existingUser, error: existingUserError } = await supabase
+      .from('users')
+      .select('id')
+      .eq('email', email)
+      .single();
+
+    if (existingUser) {
+      return res.status(409).json({ error: 'Usuário com este email já existe' });
+    }
+    if (existingUserError && existingUserError.code !== 'PGRST116') { // PGRST116 means no rows found
+      console.error('Erro ao verificar usuário existente:', existingUserError);
+      return res.status(500).json({ error: 'Erro interno do servidor' });
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const { data: newUser, error } = await supabase
+      .from('users')
+      .insert([
+        { nome, email, password: hashedPassword, role: 'user', ativo: true }
+      ])
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Erro ao inserir usuário no Supabase:', error);
+      return res.status(500).json({ error: 'Erro ao criar usuário' });
+    }
+
+    const { password: _, ...userWithoutPassword } = newUser;
+    res.status(201).json({ message: 'Usuário criado com sucesso', user: userWithoutPassword });
+
+  } catch (error) {
+    console.error('Erro ao criar usuário:', error);
+    res.status(500).json({ error: 'Erro interno do servidor' });
+  }
+});
+
 // Middleware de autenticação
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers['authorization'];
