@@ -15,18 +15,7 @@ testConnection();
 
 // Middlewares básicos
 app.use(cors({
-  origin: [
-    'https://jurisacompanha.vercel.app',
-    'https://jurisacompanha-frontend.vercel.app',
-    'https://jurisacompanha-frontend-chim9pjw3.vercel.app',
-    'https://jurisacompanha-frontend-nnrcu8uvk.vercel.app',
-    'https://frontend-glx5w9c74-mauricio-silva-oliveiras-projects.vercel.app',
-    'https://acompanhamento-processual-kbqpox4iz.vercel.app',
-    'http://localhost:5173',
-    'http://localhost:3000',
-    'http://127.0.0.1:5173',
-    'http://127.0.0.1:3000'
-  ],
+  origin: true, // Aceita todas as origens em produção
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
