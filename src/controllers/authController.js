@@ -281,3 +281,35 @@ export const updateProfile = async (req, res) => {
     });
   }
 };
+
+export const debugLogin = async (req, res) => {
+  try {
+    const { email } = req.body;
+    
+    if (!email) {
+      return res.status(400).json({ error: 'Email é obrigatório' });
+    }
+
+    // Busca o usuário
+    const user = await User.findOne({ where: { email } });
+    
+    if (!user) {
+      return res.status(404).json({ error: 'Usuário não encontrado' });
+    }
+
+    // Retorna informações do usuário (sem a senha completa)
+    res.json({
+      user: {
+        id: user.id,
+        email: user.email,
+        nome: user.nome,
+        role: user.role,
+        ativo: user.ativo,
+        passwordHash: user.password ? user.password.substring(0, 20) + '...' : 'N/A'
+      }
+    });
+  } catch (error) {
+    logger.error('Erro no debug de login:', error);
+    res.status(500).json({ error: 'Erro interno' });
+  }
+};
