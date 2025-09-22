@@ -7375,3 +7375,15 @@
 {"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-22T03:20:16.140Z"}
 {"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-22T03:20:16.140Z"}
 {"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-22T03:20:16.140Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:18.063Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.212Z"}
+{"level":"info","message":"Sincronização automática desabilitada - usando tabelas existentes","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.215Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.216Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.217Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.217Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.219Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.220Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.220Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.220Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.220Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-22T03:23:20.220Z"}
