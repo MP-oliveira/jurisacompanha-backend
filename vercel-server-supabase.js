@@ -31,6 +31,39 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Teste de conexão com banco
+app.get('/api/test/db-test', async (req, res) => {
+  try {
+    const client = supabaseAdmin || supabase;
+    const { count, error } = await client
+      .from('users')
+      .select('*', { count: 'exact', head: true });
+
+    if (error) {
+      console.error('Erro ao testar conexão com banco:', error);
+      return res.status(500).json({
+        error: 'Erro de conexão com banco',
+        details: error.message,
+        timestamp: new Date().toISOString()
+      });
+    }
+
+    res.status(200).json({
+      message: 'Conexão com banco OK',
+      userCount: count || 0,
+      timestamp: new Date().toISOString()
+    });
+
+  } catch (error) {
+    console.error('Erro ao testar conexão com banco:', error);
+    res.status(500).json({
+      error: 'Erro de conexão com banco',
+      details: error.message,
+      timestamp: new Date().toISOString()
+    });
+  }
+});
+
 // Login de usuário
 app.post('/api/auth/login', async (req, res) => {
   try {
