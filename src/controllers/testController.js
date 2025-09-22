@@ -13,6 +13,32 @@ class TestController {
   }
 
   /**
+   * Testa conexão com o banco de dados
+   * @param {Object} req - Request object
+   * @param {Object} res - Response object
+   */
+  testDatabaseConnection = async (req, res) => {
+    try {
+      // Testa conexão com User model
+      const userCount = await User.count();
+      
+      res.status(200).json({
+        message: 'Conexão com banco OK',
+        userCount: userCount,
+        timestamp: new Date().toISOString()
+      });
+
+    } catch (error) {
+      logger.error('Erro ao testar conexão com banco:', error);
+      res.status(500).json({
+        error: 'Erro de conexão com banco',
+        details: error.message,
+        timestamp: new Date().toISOString()
+      });
+    }
+  }
+
+  /**
    * Cria um processo base para testes
    * @param {Object} req - Request object
    * @param {Object} res - Response object

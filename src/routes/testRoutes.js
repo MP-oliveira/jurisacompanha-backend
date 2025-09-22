@@ -8,7 +8,10 @@ import testController from '../controllers/testController.js';
 
 const router = express.Router();
 
-// Todas as rotas de teste requerem autenticação
+// Endpoint de teste sem autenticação
+router.get('/db-test', testController.testDatabaseConnection);
+
+// Todas as outras rotas de teste requerem autenticação
 router.use(authenticateToken);
 
 /**
