@@ -69,6 +69,11 @@ app.post('/api/auth/login', async (req, res) => {
   try {
     console.log('🔐 Login attempt:', { email: req.body.email, hasPassword: !!req.body.password });
     console.log('🌐 Request headers:', req.headers);
+    console.log('🔧 Environment check:', {
+      hasSupabaseUrl: !!process.env.SUPABASE_URL,
+      hasSupabaseKey: !!process.env.SUPABASE_SERVICE_KEY,
+      supabaseUrl: process.env.SUPABASE_URL?.substring(0, 20) + '...'
+    });
     
     const { email, password } = req.body;
 
