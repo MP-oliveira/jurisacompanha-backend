@@ -56,7 +56,7 @@ Alert.init({
 }, {
   sequelize,
   modelName: 'Alert',
-  tableName: 'alerts'
+  tableName: 'alertas'
 });
 
 export default Alert;

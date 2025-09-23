@@ -20,6 +20,7 @@ const processoSchema = Joi.object({
   assunto: Joi.string().max(500).optional(),
   tribunal: Joi.string().max(100).optional(),
   comarca: Joi.string().max(100).optional(),
+  status: Joi.string().valid('ativo', 'arquivado', 'suspenso').optional(),
   dataDistribuicao: Joi.date().allow(null, '').optional(),
   dataSentenca: Joi.date().allow(null, '').optional(),
   prazoRecurso: Joi.date().allow(null, '').optional(),

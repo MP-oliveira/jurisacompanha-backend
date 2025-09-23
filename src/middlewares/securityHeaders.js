@@ -210,8 +210,24 @@ export const securityHeaders = (req, res, next) => {
  * Headers de segurança para CORS
  */
 export const corsSecurityHeaders = (req, res, next) => {
-  // Headers CORS seguros
-  res.setHeader('Access-Control-Allow-Origin', process.env.FRONTEND_URL || 'http://localhost:5173');
+  // Headers CORS seguros - permitir múltiplas origens
+  const allowedOrigins = [
+    process.env.FRONTEND_URL || 'http://localhost:3000',
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'http://localhost:5175',
+    'http://localhost:5176',
+    'https://jurisacompanha.vercel.app',
+    'https://acompanhamento-processual-kt8g20752.vercel.app',
+    process.env.CORS_ORIGIN || 'https://your-frontend.vercel.app',
+    null // Permitir arquivos HTML locais (origin 'null')
+  ];
+  
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin) || origin === null) {
+    res.setHeader('Access-Control-Allow-Origin', origin || '*');
+  }
+  
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
