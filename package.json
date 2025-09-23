@@ -2,7 +2,7 @@
   "name": "juris-acompanha-backend",
   "version": "1.0.0",
   "type": "module",
-  "main": "vercel-server-supabase.js",
+  "main": "vercel-server.js",
   "scripts": {
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",

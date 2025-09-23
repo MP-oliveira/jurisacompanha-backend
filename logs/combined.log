@@ -669,3 +669,5 @@
 {"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-23T02:00:01.100Z"}
 {"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-23T13:00:00.517Z"}
 {"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-23T13:00:01.334Z"}
+{"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-23T14:00:00.167Z"}
+{"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-23T14:00:00.958Z"}
