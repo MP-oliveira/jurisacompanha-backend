@@ -16,6 +16,9 @@ app.use(cors({
     'http://localhost:5175',
     'https://frontend-5zmzxuyiq-mauricio-mp-oliveiras-projects.vercel.app',
     'https://frontend-d7kg7zgrf-mauricio-silva-oliveiras-projects.vercel.app',
+    'https://frontend-dvww2ij17-mauricio-mp-oliveiras-projects.vercel.app',
+    'https://frontend-m0v0sd7z8-mauricio-mp-oliveiras-projects.vercel.app',
+    'https://frontend-9omio356t-mauricio-mp-oliveiras-projects.vercel.app',
     'https://jurisacompanha.vercel.app'
   ],
   credentials: true,
