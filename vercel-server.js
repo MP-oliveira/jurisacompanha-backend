@@ -35,16 +35,7 @@ app.options('*', (req, res) => {
   res.sendStatus(200);
 });
 
-// Rate limiting - configurado para Vercel
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutos
-  max: 100, // limite de 100 requests por IP
-  keyGenerator: (req) => {
-    // Usar X-Forwarded-For para Vercel
-    return req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.ip;
-  }
-});
-app.use(limiter);
+// Rate limiting removido para evitar problemas no Vercel
 
 // Rota para a raiz
 app.get('/', (req, res) => {
