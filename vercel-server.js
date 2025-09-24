@@ -14,6 +14,7 @@ app.use(cors({
     'http://localhost:5173',
     'http://localhost:5174',
     'http://localhost:5175',
+    'http://localhost:5176',
     'https://frontend-5zmzxuyiq-mauricio-mp-oliveiras-projects.vercel.app',
     'https://frontend-d7kg7zgrf-mauricio-silva-oliveiras-projects.vercel.app',
     'https://frontend-dvww2ij17-mauricio-mp-oliveiras-projects.vercel.app',
@@ -94,6 +95,52 @@ app.get('/api/processos', (req, res) => {
   res.json({
     message: 'Endpoint de processos funcionando',
     processos: [],
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Rota para alertas
+app.get('/api/alerts', (req, res) => {
+  res.json({
+    alerts: [
+      {
+        id: 1,
+        title: 'Processo em andamento',
+        message: 'O processo 1234567-89.2024.8.26.0001 está em andamento',
+        type: 'info',
+        read: false,
+        createdAt: new Date().toISOString()
+      },
+      {
+        id: 2,
+        title: 'Prazo próximo',
+        message: 'O prazo para o processo 9876543-21.2024.8.26.0001 vence em 3 dias',
+        type: 'warning',
+        read: false,
+        createdAt: new Date().toISOString()
+      }
+    ],
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Rota para estatísticas de relatórios
+app.get('/api/relatorios/stats', (req, res) => {
+  res.json({
+    total: 15,
+    thisMonth: 8,
+    lastMonth: 7,
+    pending: 3,
+    completed: 12,
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Rota para relatórios
+app.get('/api/relatorios', (req, res) => {
+  res.json({
+    relatorios: [],
+    message: 'Endpoint de relatórios funcionando',
     timestamp: new Date().toISOString()
   });
 });
