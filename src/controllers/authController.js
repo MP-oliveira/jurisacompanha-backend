@@ -167,6 +167,15 @@ export const login = async (req, res) => {
       });
     }
 
+    // Log de login bem-sucedido
+    await AuditLogger.logLogin(
+      user.id,
+      value.email,
+      req.ip || req.connection.remoteAddress,
+      req.get('User-Agent'),
+      'SUCCESS'
+    );
+
     // Gera o token JWT
     const token = jwt.sign(
       { 

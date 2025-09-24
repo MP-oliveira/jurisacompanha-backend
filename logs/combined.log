@@ -727,3 +727,283 @@
 {"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T14:35:41.512Z"}
 {"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T14:35:41.512Z"}
 {"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T14:35:41.512Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:24.995Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:27.637Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.151Z"}
+{"level":"info","message":"📊 Tabela users: 1 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.211Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.267Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.323Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.376Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.435Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.494Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.554Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.617Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.617Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.622Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.622Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.625Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.626Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.626Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.626Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.626Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T14:51:29.626Z"}
+{"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-24T15:00:00.854Z"}
+{"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-24T15:00:01.602Z"}
+{"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-24T16:00:00.899Z"}
+{"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-24T16:00:01.675Z"}
+{"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-24T17:00:00.058Z"}
+{"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-24T17:00:00.846Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:18.432Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:20.982Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:22.843Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:22.902Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:22.956Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.012Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.072Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.132Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.186Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.248Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.307Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.308Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.310Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.310Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.314Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.314Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.314Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.314Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.314Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:23.314Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:26.854Z"}
+{"level":"info","message":"Parando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:26.862Z"}
+{"level":"info","message":"Agendador de alertas parado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:26.863Z"}
+{"level":"info","message":"Aplicação encerrada com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:27.032Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:29.251Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:30.765Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:30.823Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:30.881Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:30.944Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.001Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.057Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.116Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.176Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.234Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.235Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.238Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.238Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.240Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.240Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.240Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.240Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.240Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:40:31.240Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:04.019Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:06.484Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:07.990Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.046Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.106Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.167Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.224Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.282Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.338Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.397Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.452Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.453Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.456Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.456Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.459Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.460Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.460Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.460Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.460Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:41:08.460Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:41.349Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:44.221Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:45.701Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:45.761Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:45.819Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:45.880Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:45.940Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:45.999Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.056Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.113Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.169Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.170Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.177Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.177Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.181Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.181Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.181Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.181Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.181Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:42:46.181Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:08.231Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:10.493Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:11.969Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.024Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.077Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.136Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.190Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.245Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.306Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.366Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.424Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.424Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.428Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.428Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.431Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.431Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.431Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.432Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.432Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:12.432Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:36.684Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:38.953Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.467Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.527Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.532Z"}
+{"level":"warn","message":"Agendador de alertas não está rodando","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.532Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.582Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.584Z"}
+{"level":"warn","message":"⚠️  Tabela consultas: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.584Z"}
+{"level":"warn","message":"⚠️  Tabela relatorios: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.585Z"}
+{"level":"warn","message":"⚠️  Tabela audit_logs: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.585Z"}
+{"level":"warn","message":"⚠️  Tabela push_subscriptions: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.585Z"}
+{"level":"warn","message":"⚠️  Tabela notification_preferences: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.585Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.586Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.589Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.589Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.592Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.592Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.592Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.592Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.592Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.592Z"}
+{"level":"info","message":"Aplicação encerrada com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:40.851Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:43.151Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:44.710Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:44.769Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:44.827Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:44.888Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:44.943Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:44.998Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.055Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.115Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.176Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.177Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.184Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.184Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.188Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.188Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.188Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.188Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.188Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:43:45.188Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:46:59.514Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:01.875Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.349Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.405Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.460Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.535Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.601Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.657Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.715Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.770Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.828Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.829Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.830Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.830Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.834Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.834Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.834Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.834Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.834Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:03.834Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:15.431Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:17.543Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.003Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.061Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.119Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.178Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.233Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.287Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.346Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.405Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.466Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.466Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.467Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.467Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.469Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.469Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.469Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.469Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.470Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:19.470Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:25.919Z"}
+{"level":"info","message":"Parando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:25.922Z"}
+{"level":"info","message":"Agendador de alertas parado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:25.922Z"}
+{"level":"info","message":"Aplicação encerrada com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:26.100Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:28.376Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:29.866Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:29.931Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:29.995Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.057Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.113Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.169Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.227Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.285Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.349Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.349Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.351Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.351Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.353Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.353Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.353Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.353Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.353Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:47:30.353Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:51.528Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:53.736Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.195Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.250Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.310Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.364Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.434Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.494Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.552Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.612Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.672Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.672Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.674Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.674Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.676Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.676Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.676Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.676Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.676Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:48:55.676Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:06.853Z"}
+{"level":"info","message":"Conexão com o banco de dados estabelecida com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:08.889Z"}
+{"level":"info","message":"✅ Banco de dados sincronizado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.334Z"}
+{"level":"info","message":"📊 Tabela users: 3 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.393Z"}
+{"level":"info","message":"📊 Tabela processos: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.453Z"}
+{"level":"warn","message":"⚠️  Tabela alerts: não encontrada ou erro","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.508Z"}
+{"level":"info","message":"📊 Tabela consultas: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.561Z"}
+{"level":"info","message":"📊 Tabela relatorios: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.620Z"}
+{"level":"info","message":"📊 Tabela audit_logs: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.675Z"}
+{"level":"info","message":"📊 Tabela push_subscriptions: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.734Z"}
+{"level":"info","message":"📊 Tabela notification_preferences: 0 registros","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.794Z"}
+{"level":"info","message":"Iniciando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.795Z"}
+{"level":"info","message":"Agendador de alertas iniciado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.797Z"}
+{"level":"info","message":"Agendador de alertas iniciado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.797Z"}
+{"level":"info","message":"🔌 Socket.io configurado com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.799Z"}
+{"level":"info","message":"🚀 Servidor rodando na porta 3001","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.799Z"}
+{"level":"info","message":"📚 Documentação disponível em http://localhost:3001/docs","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.799Z"}
+{"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.799Z"}
+{"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.799Z"}
+{"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:10.799Z"}
+{"level":"info","message":"SIGTERM recebido, iniciando shutdown graceful...","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:14.290Z"}
+{"level":"info","message":"Parando agendador de alertas","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:14.296Z"}
+{"level":"info","message":"Agendador de alertas parado","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:14.296Z"}
+{"level":"info","message":"Aplicação encerrada com sucesso","service":"acompanhamento-processual","timestamp":"2025-09-24T17:49:14.578Z"}
+{"level":"error","message":"Erro ao inicializar a aplicação:","name":"SequelizeConnectionRefusedError","original":{"code":"ECONNREFUSED"},"parent":{"code":"ECONNREFUSED"},"service":"acompanhamento-processual","stack":"SequelizeConnectionRefusedError\n    at Client._connectionCallback (/Users/mauriciooliveira/acompanhamento-processual/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:24)\n    at Client._handleErrorWhileConnecting (/Users/mauriciooliveira/acompanhamento-processual/backend/node_modules/pg/lib/client.js:336:19)\n    at Client._handleErrorEvent (/Users/mauriciooliveira/acompanhamento-processual/backend/node_modules/pg/lib/client.js:346:19)\n    at Connection.emit (node:events:507:28)\n    at Socket.reportStreamError (/Users/mauriciooliveira/acompanhamento-processual/backend/node_modules/pg/lib/connection.js:57:12)\n    at Socket.emit (node:events:507:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-09-24T17:49:15.538Z"}
+{"level":"error","message":"Erro ao inicializar a aplicação:","name":"SequelizeConnectionRefusedError","original":{"code":"ECONNREFUSED"},"parent":{"code":"ECONNREFUSED"},"service":"acompanhamento-processual","stack":"SequelizeConnectionRefusedError\n    at Client._connectionCallback (/Users/mauriciooliveira/acompanhamento-processual/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js:133:24)\n    at Client._handleErrorWhileConnecting (/Users/mauriciooliveira/acompanhamento-processual/backend/node_modules/pg/lib/client.js:336:19)\n    at Client._handleErrorEvent (/Users/mauriciooliveira/acompanhamento-processual/backend/node_modules/pg/lib/client.js:346:19)\n    at Connection.emit (node:events:507:28)\n    at Socket.reportStreamError (/Users/mauriciooliveira/acompanhamento-processual/backend/node_modules/pg/lib/connection.js:57:12)\n    at Socket.emit (node:events:507:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","timestamp":"2025-09-24T17:49:25.826Z"}
