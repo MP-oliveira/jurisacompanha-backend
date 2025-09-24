@@ -88,6 +88,17 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Rota de debug para verificar variáveis de ambiente
+app.get('/api/debug', (req, res) => {
+  res.json({
+    hasDatabaseUrl: !!process.env.DATABASE_URL,
+    databaseUrlLength: process.env.DATABASE_URL ? process.env.DATABASE_URL.length : 0,
+    nodeEnv: process.env.NODE_ENV,
+    hasSupabaseUrl: !!process.env.SUPABASE_URL,
+    hasSupabaseKey: !!process.env.SUPABASE_SERVICE_KEY
+  });
+});
+
 // Usar rotas reais do backend com tratamento de erro
 try {
   app.use('/api/auth', authRoutes);
