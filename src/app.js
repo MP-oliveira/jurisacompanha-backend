@@ -60,6 +60,7 @@ app.use(cors({
     'https://frontend-lznaudnp2-mauricio-mp-oliveiras-projects.vercel.app',
     'https://frontend-erztz6jv7-mauricio-mp-oliveiras-projects.vercel.app',
     'https://frontend-p5aneidng-mauricio-mp-oliveiras-projects.vercel.app',
+    'https://frontend-hftw89yq8-mauricio-mp-oliveiras-projects.vercel.app',
     process.env.CORS_ORIGIN || 'https://your-frontend.vercel.app',
     null // Permitir arquivos HTML locais (origin 'null')
   ],
