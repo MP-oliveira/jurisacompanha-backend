@@ -13,12 +13,22 @@ if (!process.env.DATABASE_URL) {
 
 // Testar conexão com o banco
 import sequelize from './src/config/database.js';
-import { User } from './src/models/index.js';
 
 // Teste de conexão
 sequelize.authenticate()
-  .then(() => {
+  .then(async () => {
     console.log('✅ Conexão com o banco de dados estabelecida com sucesso');
+    
+    // Importar modelos após conexão estabelecida
+    const { User } = await import('./src/models/index.js');
+    
+    // Testar busca de usuário
+    try {
+      const user = await User.findOne({ where: { email: 'guilherme@jurisacompanha.com' } });
+      console.log('✅ Usuário encontrado:', user ? user.email : 'Não encontrado');
+    } catch (err) {
+      console.error('❌ Erro ao buscar usuário:', err);
+    }
   })
   .catch(err => {
     console.error('❌ Erro ao conectar com o banco de dados:', err);
