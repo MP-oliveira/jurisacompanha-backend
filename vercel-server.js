@@ -11,6 +11,19 @@ if (!process.env.DATABASE_URL) {
   console.error('DATABASE_URL não está definida nas variáveis de ambiente');
 }
 
+// Testar conexão com o banco
+import sequelize from './src/config/database.js';
+import { User } from './src/models/index.js';
+
+// Teste de conexão
+sequelize.authenticate()
+  .then(() => {
+    console.log('✅ Conexão com o banco de dados estabelecida com sucesso');
+  })
+  .catch(err => {
+    console.error('❌ Erro ao conectar com o banco de dados:', err);
+  });
+
 // Importar rotas reais
 import authRoutes from './src/routes/authRoutes.js';
 import userRoutes from './src/routes/userRoutes.js';
