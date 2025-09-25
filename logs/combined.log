@@ -2391,3 +2391,7 @@
 {"level":"info","message":"🔗 API disponível em http://localhost:3001/api","service":"acompanhamento-processual","timestamp":"2025-09-25T14:00:18.262Z"}
 {"level":"info","message":"🛠️  Modo de desenvolvimento ativo","service":"acompanhamento-processual","timestamp":"2025-09-25T14:00:18.262Z"}
 {"level":"info","message":"📊 Logs detalhados habilitados","service":"acompanhamento-processual","timestamp":"2025-09-25T14:00:18.262Z"}
+{"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-25T15:00:00.478Z"}
+{"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-25T15:00:01.296Z"}
+{"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-25T16:00:00.372Z"}
+{"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-25T16:00:01.347Z"}
