@@ -122,6 +122,22 @@ app.get('/api/debug', (req, res) => {
   });
 });
 
+// Rota de debug para variáveis de ambiente
+app.get('/api/debug', (req, res) => {
+  res.json({
+    env: {
+      NODE_ENV: process.env.NODE_ENV,
+      DB_HOST: process.env.DB_HOST ? '***' : 'NOT_SET',
+      DB_PORT: process.env.DB_PORT ? '***' : 'NOT_SET',
+      DB_NAME: process.env.DB_NAME ? '***' : 'NOT_SET',
+      DB_USER: process.env.DB_USER ? '***' : 'NOT_SET',
+      DB_PASSWORD: process.env.DB_PASSWORD ? '***' : 'NOT_SET',
+      DATABASE_URL: process.env.DATABASE_URL ? '***' : 'NOT_SET',
+      JWT_SECRET: process.env.JWT_SECRET ? '***' : 'NOT_SET'
+    }
+  });
+});
+
 // Usar rotas reais do backend com tratamento de erro
 try {
   app.use('/api/auth', authRoutes);
