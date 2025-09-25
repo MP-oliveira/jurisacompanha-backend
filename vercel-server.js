@@ -16,19 +16,8 @@ import sequelize from './src/config/database.js';
 
 // Teste de conexão
 sequelize.authenticate()
-  .then(async () => {
+  .then(() => {
     console.log('✅ Conexão com o banco de dados estabelecida com sucesso');
-    
-    // Importar modelos após conexão estabelecida
-    const { User } = await import('./src/models/index.js');
-    
-    // Testar busca de usuário
-    try {
-      const user = await User.findOne({ where: { email: 'guilherme@jurisacompanha.com' } });
-      console.log('✅ Usuário encontrado:', user ? user.email : 'Não encontrado');
-    } catch (err) {
-      console.error('❌ Erro ao buscar usuário:', err);
-    }
   })
   .catch(err => {
     console.error('❌ Erro ao conectar com o banco de dados:', err);
@@ -49,22 +38,8 @@ const app = express();
 app.use(helmet());
 app.use(cors({
   origin: [
-    'http://localhost:3000',
-    'http://localhost:5173',
-    'http://localhost:5174',
-    'http://localhost:5175',
-    'http://localhost:5176',
-    'https://frontend-5zmzxuyiq-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://frontend-d7kg7zgrf-mauricio-silva-oliveiras-projects.vercel.app',
-    'https://frontend-dvww2ij17-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://frontend-m0v0sd7z8-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://frontend-9omio356t-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://frontend-6g4y7ne7q-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://frontend-8jipb5gtk-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://frontend-83sba8eo7-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://frontend-14ttv3go7-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://frontend-hdj0hmmx0-mauricio-mp-oliveiras-projects.vercel.app',
-    'https://jurisacompanha.vercel.app'
+    'http://localhost:5173', // Frontend local
+    'https://frontend-83sba8eo7-mauricio-mp-oliveiras-projects.vercel.app' // Frontend produção
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -122,21 +97,6 @@ app.get('/api/debug', (req, res) => {
   });
 });
 
-// Rota de debug para variáveis de ambiente
-app.get('/api/debug', (req, res) => {
-  res.json({
-    env: {
-      NODE_ENV: process.env.NODE_ENV,
-      DB_HOST: process.env.DB_HOST ? '***' : 'NOT_SET',
-      DB_PORT: process.env.DB_PORT ? '***' : 'NOT_SET',
-      DB_NAME: process.env.DB_NAME ? '***' : 'NOT_SET',
-      DB_USER: process.env.DB_USER ? '***' : 'NOT_SET',
-      DB_PASSWORD: process.env.DB_PASSWORD ? '***' : 'NOT_SET',
-      DATABASE_URL: process.env.DATABASE_URL ? '***' : 'NOT_SET',
-      JWT_SECRET: process.env.JWT_SECRET ? '***' : 'NOT_SET'
-    }
-  });
-});
 
 // Usar rotas reais do backend com tratamento de erro
 try {

@@ -4,13 +4,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-// Configuração do Supabase (como no seu outro projeto)
-const sequelize = new Sequelize({
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  database: process.env.DB_NAME,
-  username: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
+// Configuração do Supabase (local e produção)
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
   dialect: 'postgres',
   dialectModule: pg,
   dialectOptions: {

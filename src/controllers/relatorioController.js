@@ -223,6 +223,53 @@ export const gerarRelatorio = async (req, res) => {
 };
 
 /**
+ * Atualiza um relatório
+ */
+export const atualizarRelatorio = async (req, res) => {
+  try {
+    const { id } = req.params;
+    
+    // Valida os dados de entrada
+    const { error, value } = relatorioSchema.validate(req.body);
+    if (error) {
+      return res.status(400).json({
+        error: 'Dados inválidos',
+        details: error.details.map(detail => ({
+          field: detail.path.join('.'),
+          message: detail.message
+        }))
+      });
+    }
+
+    // Busca o relatório
+    const relatorio = await Relatorio.findOne({
+      where: { id, userId: req.user.id }
+    });
+
+    if (!relatorio) {
+      return res.status(404).json({
+        error: 'Relatório não encontrado'
+      });
+    }
+
+    // Atualiza o relatório
+    await relatorio.update(value);
+
+    logger.info(`Relatório atualizado: ${relatorio.titulo} por ${req.user.email}`);
+
+    res.json({
+      message: 'Relatório atualizado com sucesso',
+      relatorio
+    });
+  } catch (error) {
+    logger.error('Erro ao atualizar relatório:', error);
+    res.status(500).json({
+      error: 'Erro interno do servidor'
+    });
+  }
+};
+
+/**
  * Remove um relatório
  */
 export const removerRelatorio = async (req, res) => {

@@ -29,10 +29,10 @@ const VALIDATION_CONFIG = {
     message: 'CNPJ deve estar no formato: 12.345.678/0001-90'
   },
   
-  // Nomes - apenas letras, espaços e acentos
+  // Nomes - letras, espaços, acentos e números (para nomes como "João Silva 2" ou "Maria Santos III")
   NOME: {
-    pattern: /^[a-zA-ZÀ-ÿ\u0100-\u017F\u1E00-\u1EFF\s]{2,100}$/,
-    message: 'Nome deve conter apenas letras, espaços e acentos (2-100 caracteres)'
+    pattern: /^[a-zA-ZÀ-ÿ\u0100-\u017F\u1E00-\u1EFF\s0-9]{2,100}$/,
+    message: 'Nome deve conter apenas letras, espaços, acentos e números (2-100 caracteres)'
   },
   
   // Texto jurídico - permite caracteres especiais necessários

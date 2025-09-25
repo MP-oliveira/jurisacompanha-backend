@@ -5,6 +5,7 @@ import {
   listarRelatorios,
   buscarRelatorio,
   gerarRelatorio,
+  atualizarRelatorio,
   removerRelatorio,
   estatisticasRelatorios
 } from '../controllers/relatorioController.js';
@@ -19,6 +20,7 @@ router.get('/', validateQueryParams(['page', 'limit', 'search', 'tipo', 'status'
 router.get('/stats', estatisticasRelatorios);
 router.get('/:id', buscarRelatorio);
 router.post('/', gerarRelatorio);
+router.put('/:id', atualizarRelatorio);
 router.delete('/:id', removerRelatorio);
 
 export default router;

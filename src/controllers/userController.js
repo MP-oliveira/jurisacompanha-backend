@@ -349,3 +349,40 @@ export const activateUser = async (req, res) => {
     });
   }
 };
+
+/**
+ * Exclui um usuário permanentemente
+ */
+export const deleteUser = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const user = await User.findByPk(id);
+    if (!user) {
+      return res.status(404).json({
+        error: 'Usuário não encontrado'
+      });
+    }
+
+    // Não permite excluir a si mesmo
+    if (req.user.id === parseInt(id)) {
+      return res.status(400).json({
+        error: 'Não é possível excluir seu próprio usuário'
+      });
+    }
+
+    // Exclui o usuário permanentemente
+    await user.destroy();
+
+    logger.info(`Usuário excluído permanentemente: ${user.email} por ${req.user.email}`);
+
+    res.json({
+      message: 'Usuário excluído com sucesso'
+    });
+  } catch (error) {
+    logger.error('Erro ao excluir usuário:', error);
+    res.status(500).json({
+      error: 'Erro interno do servidor'
+    });
+  }
+};
