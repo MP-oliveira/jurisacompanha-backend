@@ -2395,3 +2395,10 @@
 {"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-25T15:00:01.296Z"}
 {"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-25T16:00:00.372Z"}
 {"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-25T16:00:01.347Z"}
+{"ip":"::1","level":"info","message":"GET /api/alerts","service":"acompanhamento-processual","timestamp":"2025-09-25T16:29:57.688Z","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/relatorios/stats","service":"acompanhamento-processual","timestamp":"2025-09-25T16:29:57.719Z","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/processos","service":"acompanhamento-processual","timestamp":"2025-09-25T16:29:57.836Z","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/alerts","service":"acompanhamento-processual","timestamp":"2025-09-25T16:29:58.616Z","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}
+{"ip":"::1","level":"info","message":"GET /api/processos","service":"acompanhamento-processual","timestamp":"2025-09-25T16:29:58.617Z","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}
+{"level":"info","message":"Processando alertas pendentes","service":"acompanhamento-processual","timestamp":"2025-09-25T17:00:00.516Z"}
+{"level":"info","message":"Processados 0 processos com prazos próximos","service":"acompanhamento-processual","timestamp":"2025-09-25T17:00:01.378Z"}
